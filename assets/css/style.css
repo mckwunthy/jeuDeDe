@@ -1,0 +1,207 @@
+/*************APP*****************/
+#app {
+    width: 700px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/*************H1*****************/
+h1 {
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    height: 70px;
+    line-height: 75px;
+    color: var(--main-color-white);
+    padding-left: 5px;
+    margin-bottom: 100px;
+}
+
+/************* BOX CF*****************/
+.boxCf,
+.winnerBox {
+    background-color: var(--main-color-white);
+    width: 700px;
+    height: 50vh;
+    margin: 0 auto;
+    z-index: 999;
+    opacity: 0.7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boxCf h3,
+.winnerBox h3 {
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    padding: 5px;
+}
+
+.yesBt,
+.reprendre {
+    background-color: var(--main-color-red);
+    padding: 20px;
+    color: var(--main-color-white);
+    cursor: pointer
+}
+
+.noBt {
+    background-color: var(--main-color-green);
+    padding: 20px;
+    color: var(--main-color-white);
+    cursor: pointer
+}
+
+
+
+/*************PLAYER BOX*****************/
+.player-one,
+.player-two {
+    border: 3px solid var(--main-color-like-blue);
+    border-radius: 10px;
+    height: 350px;
+}
+
+.player-one {
+    background-color: var(--main-color);
+}
+
+.player-one-name,
+.player-two-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.player-one-name,
+.player-two-name,
+.player-one-current,
+.player-two-current {
+    text-align: center;
+    border: 3px solid var(--main-color-like-blue);
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 2px var(--main-color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--main-color-white);
+}
+
+div input {
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--main-color-white);
+    background-color: var(--main-color-white);
+    border: none;
+    /* outline: none; */
+    font-weight: bold;
+}
+
+.player-one-global,
+.player-two-global {
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--main-color-like-blue);
+    border-radius: 100px;
+    box-shadow: 1px 4px 2px var(--main-color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-white);
+}
+
+
+/*************GAME BOX*****************/
+.game-box {
+    top: 210px;
+    left: 315px;
+    border: 3px solid var(--main-color-like-blue);
+    border-radius: 10px;
+    box-shadow: 1px 4px 2px var(--main-color-black);
+    width: 50px;
+    height: 260px;
+    background-color: var(--main-color-white);
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.game-box div:not(:nth-child(2)) {
+    cursor: pointer;
+}
+
+.game-box div:not(:nth-child(2)):hover {
+    font-weight: bold;
+}
+
+.de-box {
+    color: var(--main-color-red);
+    font-size: 3.2rem;
+}
+
+/*************XXXXXXXXXXXXXXXXXXX*****************/
+/*************XXXXXXXXXXXXXXXXXXX*****************/
+/*************XXXXXXXXXXXXXXXXXXX*****************/
+/*************XXXXXXXXXXXXXXXXXXX*****************/
+/*************XXXXXXXXXXXXXXXXXXX*****************/
+/*************XXXXXXXXXXXXXXXXXXX*****************/
+
+
+/*************MEDIA*****************/
+
+@media screen and (max-width: 700px) {
+    #app {
+        width: 350px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .boxCf,
+    .winnerBox {
+        width: 350px;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .player-box {
+        flex-direction: column;
+    }
+
+    .player-one,
+    .player-two {
+        padding: 40px 0;
+    }
+
+    .player-one,
+    .player-two {
+        gap: 20px;
+    }
+
+    .game-box {
+        top: 380px;
+        left: 18px;
+        width: 300px;
+        height: 40px;
+        flex-direction: row;
+    }
+}
+
+/*
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 427px) {
+  
+} */

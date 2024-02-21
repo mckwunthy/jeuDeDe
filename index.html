@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jeu de De</title>
+		<link rel="stylesheet" href="/assets/css/main.css">
+	</head>
+	<body>
+		<div id="app" class="relative">
+			<h1>game</h1>
+			<div class="boxCf none flex flex-column gap-50 jcc aic absolute">
+				<h3>Voulez vous reprendre la partie ?</h3>
+				<div class="flex gap-50">
+					<div class="yesBt">OUI</div>
+					<div class="noBt">NON</div>
+				</div>
+			</div>
+			<div class="winnerBox none flex flex-column gap-50 jcc aic absolute">
+				<h3>Felicitations, vous avez gangé la partie</h3>
+				<div class="reprendre">Reprendre</div>
+			</div>
+			<div class="player-box flex gap-5">
+				<div class="player-one flex-1 flex flex-column jcsa aic">
+					<div class="player-one-name">
+						<input type="text" disabled placeholder="player one">
+						<i class="fa-solid fa-pen"></i>
+					</div>
+					<div class="player-one-global">500</div>
+					<div class="player-one-current">
+						current
+						<br>1</div>
+				</div>
+				<div class="player-two flex-1 flex flex-column jcsa aic">
+					<div class="player-two-name">
+						<input type="text" disabled placeholder="player two">
+						<i class="fa-solid fa-pen"></i>
+					</div>
+					<div class="player-two-global">500</div>
+					<div class="player-two-current">current
+						<br>2</div>
+				</div>
+			</div>
+			<div class="game-box absolute flex flex-column jcsb aic">
+				<div class="new">new</div>
+				<div class="de-box">
+					<i class="fa-solid fa-dice-one none"></i>
+					<i class="fa-solid fa-dice-two none"></i>
+					<i class="fa-solid fa-dice-three none"></i>
+					<i class="fa-solid fa-dice-four"></i>
+					<i class="fa-solid fa-dice-five none"></i>
+					<i class="fa-solid fa-dice-six none"></i>
+				</div>
+				<div class="roll">roll</div>
+				<div class="hold">hold</div>
+			</div>
+		</div>
+		<script src="/assets/js/functions/sounds.js"></script>
+		<script src="/assets/js/functions/functions.js"></script>
+		<script src="/assets/js/main.js"></script>
+	</body>
+</html></body></html>
