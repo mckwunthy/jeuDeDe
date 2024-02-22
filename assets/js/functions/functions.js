@@ -283,6 +283,10 @@ var listernerFunction = {
             listernerFunction.currentManage(currentPlayer, diceValue)
         }, 2000);
     },
+    emptyAll: () => {
+        scoreGlobalTable = [0, 0]
+        currentTable = [0, 0]
+    },
     winner: (currentPlayer) => {
         currentPlayer == 1 ? precedent = 0 : precedent = 1
         // console.log(scoreGlobalTable[precedent]);
@@ -317,6 +321,9 @@ var listernerFunction = {
             setTimeout(() => {
                 soundManager.audioCongratSuite()
             }, 2000);
+
+            //vider les tables
+            listernerFunction.emptyAll()
         }
 
         // listernerFunction.reprendrePartie()
