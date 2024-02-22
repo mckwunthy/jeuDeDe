@@ -79,7 +79,8 @@ var listernerFunction = {
         listernerFunction.initCurrentTwo()
 
         listernerFunction.newGame()
-
+        //vider les tables
+        listernerFunction.emptyAll()
     },
     updatePlayersNameTable: () => {
         if (inputOne.value.trim()) {
