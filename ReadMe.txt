@@ -21,3 +21,6 @@ Le jeu comprend 2 joueurs sur un seul et même écran.
 		o 4, il gagne 33 points
 		o 5, il gagne 28 points
 		o 6, il gagne 75 points
+
+
+NB : modifiez le score (global) à atteindre pour gagnger le jeu (à la ligne 35 du fichier functions.js)
